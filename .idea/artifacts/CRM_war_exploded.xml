@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="CRM:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CRM_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CRM/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CRM" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="project" name="Struts 2" />
+          <element id="library" level="project" name="Spring" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/struts2-spring-plugin-2.5.14.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/mysql-connector-java-5.1.45-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../c3p0连接池-lib/c3p0-0.9.5.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../c3p0连接池-lib/mchange-commons-java-0.2.15.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
