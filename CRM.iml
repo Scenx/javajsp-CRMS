@@ -16,7 +16,8 @@
       <facet type="Struts2" name="Struts 2">
         <configuration>
           <fileset id="s2fileset" name="Default File Set " removed="false">
-            <file>file://$MODULE_DIR$/src/struts.xml</file>
+            <file>file://$MODULE_DIR$/config/struts.xml</file>
+            <file>file://$MODULE_DIR$/config/struts2/struts-staff.xml</file>
             <file>jar://$MODULE_DIR$/../../struts2-lib/struts2-core-2.5.14.1.jar!/struts-default.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />

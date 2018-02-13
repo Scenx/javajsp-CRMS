@@ -9,6 +9,7 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
+ * 课程类别数据模型
  * @author Scen
  * @date 2018/2/13
  */

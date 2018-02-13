@@ -6,7 +6,16 @@
 
 <struts>
     <constant name="struts.devMode" value="true"/>
+    <constant name="struts.ui.theme" value="simple"/>
     <constant name="struts.ognl.allowStaticMethodAccess" value="true"/>
     <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
     <constant name="struts.action.extension" value="scen,"/>
+
+    <!--公共项-->
+    <package name="common" namespace="/" extends="struts-default">
+
+    </package>
+
+    <!--加载其他配置文件-->
+    <include file="struts2/struts-staff.xml"/>
 </struts>

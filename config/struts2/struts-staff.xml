@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--员工的配置-->
+    <package name="staff" namespace="/" extends="common">
+        <action name="staffAction_*" class="com.scen.crm.staff.web.action.StaffAction" method="{1}">
+
+        </action>
+    </package>
+
+</struts>

@@ -4,4 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--员工配置项-->
+
+    <bean id="crmStaff" class="com.scen.crm.staff.domain.CrmStaff"/>
+
+    <bean id="staffDao" class="com.scen.crm.staff.dao.impl.StaffDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="staffService" class="com.scen.crm.staff.service.impl.StaffServiceImpl">
+        <property name="staffDao" ref="staffDao"/>
+    </bean>
 </beans>

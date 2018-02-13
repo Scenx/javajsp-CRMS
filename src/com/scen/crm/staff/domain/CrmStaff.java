@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.Objects;
 
 /**
+ * 员工数据模型
  * @author Scen
  * @date 2018/2/12
  */

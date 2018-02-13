@@ -10,6 +10,7 @@ import java.util.Objects;
 import java.util.Set;
 
 /**
+ * 职位数据模型
  * @author Scen
  * @date 2018/2/12
  */
