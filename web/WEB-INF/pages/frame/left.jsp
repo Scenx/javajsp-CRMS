@@ -19,7 +19,7 @@
 		d.add('0102','01','学工部');
 		d.add('010201','0102','在校学生管理','${pageContext.request.contextPath}/pages/student/listStudent.jsp','','right');
 		d.add('010202','0102','学生升级/留班','${pageContext.request.contextPath}/pages/station/listStation.jsp','','right');
-		d.add('010203','0102','学生流失情况','${pageContext.request.contextPath}/pages/runoff/listRunoff.jsp','','right');		
+		d.add('010203','0102','学生流失情况','${pageContext.request.contextPath}/pages/runoff/listRunoff.jsp','','right');
 		d.add('0103','01','教学部');
 		<%-- 班级前缀和包结构命名：classesm ，其他命名class --%>
 		d.add('010301','0103','班级管理','${pageContext.request.contextPath}/pages/classesm/listClass.jsp','','right');

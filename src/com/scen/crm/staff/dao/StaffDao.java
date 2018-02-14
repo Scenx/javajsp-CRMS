@@ -10,8 +10,8 @@ import com.scen.crm.staff.domain.CrmStaff;
 public interface StaffDao {
     /**
      * 通过用户名和密码查询
-     * @param loginName
-     * @param loginPwd
+     * @param loginName 登录名
+     * @param loginPwd 登录密码
      * @return 结果返回唯一的一个员工对象
      */
     CrmStaff find(String loginName,String loginPwd);

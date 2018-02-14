@@ -14,6 +14,33 @@
     <!--公共项-->
     <package name="common" namespace="/" extends="struts-default">
 
+
+        <interceptors>
+            <!--声明-->
+            <interceptor name="loginInterceptor" class="com.scen.crm.web.interceptor.LoginInterceptor"/>
+            <!--自定义拦截器栈-->
+            <interceptor-stack name="loginStack">
+                <interceptor-ref name="defaultStack"/>
+                <!--自定义拦截器需要对login方法不进行拦截-->
+                <interceptor-ref name="loginInterceptor">
+                    <param name="excludeMethods">login</param>
+                </interceptor-ref>
+            </interceptor-stack>
+        </interceptors>
+
+        <default-interceptor-ref name="loginStack"/>
+
+        <!--登录失败-->
+        <global-results>
+            <result name="login">/WEB-INF/pages/login.jsp</result>
+        </global-results>
+
+        <global-allowed-methods>regex:.*</global-allowed-methods>
+        <!--转发到jsp页面的公共action-->
+        <action name="uiAction_*_*">
+            <result>/WEB-INF/pages/{1}/{2}.jsp</result>
+        </action>
+
     </package>
 
     <!--加载其他配置文件-->

@@ -47,8 +47,16 @@ public class StaffAction extends ActionSupport implements ModelDriven<CrmStaff> 
             ActionContext.getContext().getSession().put("loginStaff", findStaff);
             return "success";
         } else {
-            return "";
-            //TODO 不成功
+            this.addFieldError("","用户名与密码不匹配");
+            return "login";
         }
+    }
+
+    /**
+     * 显示首页
+     * @return 返回到首页
+     */
+    public String home() {
+        return "home";
     }
 }

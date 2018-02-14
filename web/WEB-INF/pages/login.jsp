@@ -70,7 +70,7 @@
     <script type="text/javascript">
         /* s标签中直接编写JavaScript代码时，不支持el表达式，只能提供单独的函数
         function registerUrl(){
-            <%--document.location='${pageContext.request.contextPath}/uiAction_staff_register';--%>
+            <%--document.location='${pageContext.request.contextPath}/pages/staff_register';--%>
 		}
 		*/
     </script>

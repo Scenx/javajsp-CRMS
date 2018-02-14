@@ -92,7 +92,7 @@
 	    <td align="center"></td>
 	  	<td width="7%" align="center">
 	  		
-	  		<a href="${pageContext.request.contextPath}/pages/staff/editStaff.jsp"><img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img" /></a>	
+	  		<a href="${pageContext.request.contextPath}/pages/staff/editStaff.jsp"><img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img" /></a>
 	  	</td>
 	  	
 	  </tr>
@@ -105,7 +105,7 @@
 	    <td align="center">主管</td>
 	  	<td width="7%" align="center">
 	  		
-	  		<a href="${pageContext.request.contextPath}/pages/staff/editStaff.jsp"><img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img" /></a>	
+	  		<a href="${pageContext.request.contextPath}/pages/staff/editStaff.jsp"><img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img" /></a>
 	  	</td>
 	  </tr>
 </table>

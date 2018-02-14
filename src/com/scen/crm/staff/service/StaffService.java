@@ -11,7 +11,7 @@ public interface StaffService {
 
     /**
      * 员工登录
-     * @param crmStaff
+     * @param crmStaff 员工对象
      * @return 返回一个唯一的员工对象
      */
     CrmStaff login(CrmStaff crmStaff);

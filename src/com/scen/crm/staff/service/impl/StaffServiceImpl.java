@@ -3,6 +3,7 @@ package com.scen.crm.staff.service.impl;
 import com.scen.crm.staff.dao.StaffDao;
 import com.scen.crm.staff.domain.CrmStaff;
 import com.scen.crm.staff.service.StaffService;
+import com.scen.crm.utils.MyStringUtils;
 
 /**
  * 员工业务层实现类
@@ -22,6 +23,8 @@ public class StaffServiceImpl implements StaffService {
 
     @Override
     public CrmStaff login(CrmStaff crmStaff) {
-        return staffDao.find(crmStaff.getLoginName(),crmStaff.getLoginPwd());
+        //md5加密
+        String loginPwd = MyStringUtils.getMD5Value(crmStaff.getLoginPwd());
+        return staffDao.find(crmStaff.getLoginName(),loginPwd);
     }
 }
