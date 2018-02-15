@@ -73,13 +73,12 @@ public class CrmDepartment {
         }
         CrmDepartment that = (CrmDepartment) o;
         return Objects.equals(depId, that.depId) &&
-                Objects.equals(depName, that.depName)&&
-                Objects.equals(postSet,that.postSet);
+                Objects.equals(depName, that.depName);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(depId, depName,postSet);
+        return Objects.hash(depId, depName);
     }
 }

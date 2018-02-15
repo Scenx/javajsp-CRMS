@@ -12,6 +12,8 @@
             <result name="success" type="redirectAction">staffAction_home</result>
             <!--返回到首页-->
             <result name="home">/WEB-INF/pages/frame.jsp</result>
+            <!--查询所有-->
+            <result name="findAll">/WEB-INF/pages/staff/listStaff.jsp</result>
         </action>
     </package>
 

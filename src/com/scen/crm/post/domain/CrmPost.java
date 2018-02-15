@@ -90,13 +90,12 @@ public class CrmPost {
         CrmPost crmPost = (CrmPost) o;
         return Objects.equals(postId, crmPost.postId) &&
                 Objects.equals(postName, crmPost.postName) &&
-                Objects.equals(crmDepartment, crmPost.crmDepartment) &&
-                Objects.equals(staffSet, crmPost.staffSet);
+                Objects.equals(crmDepartment, crmPost.crmDepartment);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(postId, postName,crmDepartment,staffSet);
+        return Objects.hash(postId, postName,crmDepartment);
     }
 }

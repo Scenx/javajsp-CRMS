@@ -6,6 +6,8 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.scen.crm.staff.domain.CrmStaff;
 import com.scen.crm.staff.service.StaffService;
 
+import java.util.List;
+
 /**
  * 员工表现层
  * @author Scen
@@ -52,6 +54,8 @@ public class StaffAction extends ActionSupport implements ModelDriven<CrmStaff> 
         }
     }
 
+    ////////////////////////////////////////
+
     /**
      * 显示首页
      * @return 返回到首页
@@ -59,4 +63,24 @@ public class StaffAction extends ActionSupport implements ModelDriven<CrmStaff> 
     public String home() {
         return "home";
     }
+
+
+//////////////////////////////////////////////////////////
+
+    private List<CrmStaff> crmStaffs;
+
+    public List<CrmStaff> getCrmStaffs() {
+        return crmStaffs;
+    }
+
+    /**
+     * 查询所有员工
+     * @return 回显所有员工数据到页面
+     */
+    public String findAll() {
+        crmStaffs = staffService.findAllStaff();
+        return "findAll";
+    }
+    /////////////////////////////////////////////
+
 }

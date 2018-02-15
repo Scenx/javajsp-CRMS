@@ -5,6 +5,8 @@ import com.scen.crm.staff.domain.CrmStaff;
 import com.scen.crm.staff.service.StaffService;
 import com.scen.crm.utils.MyStringUtils;
 
+import java.util.List;
+
 /**
  * 员工业务层实现类
  * @author Scen
@@ -27,4 +29,10 @@ public class StaffServiceImpl implements StaffService {
         String loginPwd = MyStringUtils.getMD5Value(crmStaff.getLoginPwd());
         return staffDao.find(crmStaff.getLoginName(),loginPwd);
     }
+
+    @Override
+    public List<CrmStaff> findAllStaff() {
+        return staffDao.findAll();
+    }
+
 }
