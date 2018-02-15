@@ -87,19 +87,21 @@
 
 
     <s:iterator value="crmStaffs" status="vs">
-    <tr class="${vs.even ? 'tabtd2':'tabtd1'}">
-        <td align="center">${staffName}</td>
-        <td align="center">${gender}</td>
-        <td align="center"><s:date name="onDutyDate" format="yyyy-MM-dd"/></td>
-        <td align="center">${crmPost.crmDepartment.depName}</td>
-        <td align="center">${crmPost.postName}</td>
-        <td width="7%" align="center">
+        <tr class="${vs.even ? 'tabtd2':'tabtd1'}">
+            <td align="center">${staffName}</td>
+            <td align="center">${gender}</td>
+            <td align="center"><s:date name="onDutyDate" format="yyyy-MM-dd"/></td>
+            <td align="center">${crmPost.crmDepartment.depName}</td>
+            <td align="center">${crmPost.postName}</td>
+            <td width="7%" align="center">
+                <%--编辑前的查询操作--%>
+                <s:a namespace="/" action="staffAction_editUI">
+                    <s:param name="staffId" value="staffId"/>
+                    <img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/>
+                </s:a>
+            </td>
 
-            <a href="${pageContext.request.contextPath}/WEB-INF/pages/staff/editStaff.jsp"><img
-                    src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/></a>
-        </td>
-
-    </tr>
+        </tr>
     </s:iterator>
 </table>
 

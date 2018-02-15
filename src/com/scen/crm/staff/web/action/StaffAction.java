@@ -3,9 +3,10 @@ package com.scen.crm.staff.web.action;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import com.scen.crm.department.domain.CrmDepartment;
+import com.scen.crm.department.service.DepartmentService;
 import com.scen.crm.staff.domain.CrmStaff;
 import com.scen.crm.staff.service.StaffService;
-
 import java.util.List;
 
 /**
@@ -44,9 +45,9 @@ public class StaffAction extends ActionSupport implements ModelDriven<CrmStaff> 
      * @return 成功或者回显错误信息
      */
     public String login(){
-        CrmStaff findStaff = staffService.login(crmStaff);
-        if (findStaff != null) {
-            ActionContext.getContext().getSession().put("loginStaff", findStaff);
+        crmStaff= staffService.login(crmStaff);
+        if (crmStaff != null) {
+            ActionContext.getContext().getSession().put("loginStaff", crmStaff);
             return "success";
         } else {
             this.addFieldError("","用户名与密码不匹配");
@@ -83,4 +84,30 @@ public class StaffAction extends ActionSupport implements ModelDriven<CrmStaff> 
     }
     /////////////////////////////////////////////
 
+    private DepartmentService departmentService;
+
+    public void setDepartmentService(DepartmentService departmentService) {
+        this.departmentService = departmentService;
+    }
+
+    List<CrmDepartment> crmDepartments;
+
+    public List<CrmDepartment> getCrmDepartments() {
+        return crmDepartments;
+    }
+
+    /**
+     * 通过id查询员工
+     * @return 回显查询到的员工对象的信息到编辑表单
+     */
+    public String editUI() {
+//        通过id查询员工
+        crmStaff = staffService.findById(crmStaff.getStaffId());
+        ActionContext.getContext().getValueStack().push(crmStaff);
+
+//        查询所有部门
+        crmDepartments = departmentService.findAll();
+
+        return "editUI";
+    }
 }
