@@ -54,7 +54,7 @@
             <td width="10%">所属部门：</td>
             <td width="20%">
                 <s:select list="crmDepartments" name="crmPost.crmDepartment.depId" listKey="depId" listValue="depName"
-                          headerKey="" headerValue="----请--选--择----"
+                          headerKey="" headerValue="----请--选--择----" onchange="showPost(this)"
                 />
 
             </td>
@@ -62,7 +62,7 @@
             <td width="62%">
                 <s:select list="crmPost.crmDepartment.postSet" name="crmPost.postId"
                           listKey="postId" listValue="postName"
-                          headerKey="" headerValue="----请--选--择----"
+                          headerKey="" headerValue="----请--选--择----" id="postSelectId"
                 />
 
             </td>
@@ -79,5 +79,38 @@
         </tr>
     </table>
 </s:form>
+<script>
+    function showPost(obj) {
+
+        var depId = obj.value;
+
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var textData = xmlhttp.responseText;
+                var jsonData = eval("(" + textData + ")");
+                var postSelectElement = document.getElementById("postSelectId");
+                postSelectElement.innerHTML = "<option value='' selected='selected'>----请--选--择----</option>";
+                for (var i = 0; i < jsonData.length; i++) {
+                    var postObj = jsonData[i];
+                    var postId = postObj.postId;
+                    var postName = postObj.postName;
+                    postSelectElement.innerHTML+="<option value='"+postId+"' selected='selected'>"+postName+"</option>";
+                }
+            }
+        }
+        var url = "${pageContext.request.contextPath}/postAction_findAllWithDepartment?crmDepartment.depId=" + depId;
+        xmlhttp.open("GET", url);
+        xmlhttp.send(null);
+    }
+</script>
 </body>
 </html>

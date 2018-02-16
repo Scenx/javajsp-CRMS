@@ -15,6 +15,12 @@
           <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/mysql-connector-java-5.1.45-bin.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../c3p0连接池-lib/c3p0-0.9.5.2.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/../../c3p0连接池-lib/mchange-commons-java-0.2.15.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/ezmorph-1.0.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/json-lib-2.4-jdk15.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/commons-beanutils-1.9.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/commons-collections4-4.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/commons-lang-2.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/../../公用-lib/commons-collections-3.2.2.jar" />
         </element>
       </element>
     </root>

@@ -44,5 +44,8 @@
     </package>
 
     <!--加载其他配置文件-->
+    <!--员工表现层-->
     <include file="struts2/struts-staff.xml"/>
+    <!--职务表现层-->
+    <include file="struts2/struts-post.xml"/>
 </struts>
