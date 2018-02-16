@@ -110,4 +110,16 @@ public class StaffAction extends ActionSupport implements ModelDriven<CrmStaff> 
 
         return "editUI";
     }
+
+
+    ////////////////////////////////////////////////
+
+    /**
+     * 编辑员工信息
+     * @return 回显到查询所有员工页面
+     */
+    public String edit() {
+        staffService.updateStaff(crmStaff);
+        return "edit";
+    }
 }

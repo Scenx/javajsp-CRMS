@@ -9,6 +9,7 @@ import java.util.List;
 
 /**
  * 员工业务层实现类
+ *
  * @author Scen
  * @date 2018/2/14
  */
@@ -27,7 +28,7 @@ public class StaffServiceImpl implements StaffService {
     public CrmStaff login(CrmStaff crmStaff) {
         //md5加密
         String loginPwd = MyStringUtils.getMD5Value(crmStaff.getLoginPwd());
-        return staffDao.find(crmStaff.getLoginName(),loginPwd);
+        return staffDao.find(crmStaff.getLoginName(), loginPwd);
     }
 
     @Override
@@ -38,6 +39,19 @@ public class StaffServiceImpl implements StaffService {
     @Override
     public CrmStaff findById(String staffId) {
         return staffDao.findById(staffId);
+    }
+
+    @Override
+    public void updateStaff(CrmStaff crmStaff) {
+        CrmStaff findStaff = staffDao.findById(crmStaff.getStaffId());
+        if (!findStaff.getLoginPwd().equals(crmStaff.getLoginPwd())) {
+            findStaff.setLoginPwd(MyStringUtils.getMD5Value(crmStaff.getLoginPwd()));
+        }
+        findStaff.setLoginName(crmStaff.getLoginName());
+        findStaff.setGender(crmStaff.getGender());
+        findStaff.setCrmPost(crmStaff.getCrmPost());
+        findStaff.setOnDutyDate(crmStaff.getOnDutyDate());
+        findStaff.setStaffName(crmStaff.getStaffName());
     }
 
 }

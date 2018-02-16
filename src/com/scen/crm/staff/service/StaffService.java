@@ -30,4 +30,10 @@ public interface StaffService {
      * @return 员工对象
      */
     CrmStaff findById(String staffId);
+
+    /**
+     * 更新员工信息
+     * @param crmStaff 员工对象
+     */
+    void updateStaff(CrmStaff crmStaff);
 }
