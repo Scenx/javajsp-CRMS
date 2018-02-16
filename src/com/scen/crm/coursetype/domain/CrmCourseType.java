@@ -49,6 +49,20 @@ public class CrmCourseType {
     private Set<CrmClass> crmClassSet = new HashSet<CrmClass>();
 
 
+    //查询条件 -- 一般查询条件都是字符串
+    /**
+     * 总学时
+     */
+    private String totalStart;
+    private String totalEnd;
+    /**
+     * 课程费用
+     */
+
+    private String courseCostStart;
+    private String courseCostEnd;
+
+
     @Id
     @GeneratedValue(generator = "uuid")
     @Column(name = "courseTypeId", nullable = false, length = 255)
@@ -110,6 +124,42 @@ public class CrmCourseType {
         this.crmClassSet = crmClassSet;
     }
 
+    @Transient
+    public String getTotalStart() {
+        return totalStart;
+    }
+
+    public void setTotalStart(String totalStart) {
+        this.totalStart = totalStart;
+    }
+
+    @Transient
+    public String getTotalEnd() {
+        return totalEnd;
+    }
+
+    public void setTotalEnd(String totalEnd) {
+        this.totalEnd = totalEnd;
+    }
+
+    @Transient
+    public String getCourseCostStart() {
+        return courseCostStart;
+    }
+
+    public void setCourseCostStart(String courseCostStart) {
+        this.courseCostStart = courseCostStart;
+    }
+
+    @Transient
+    public String getCourseCostEnd() {
+        return courseCostEnd;
+    }
+
+    public void setCourseCostEnd(String courseCostEnd) {
+        this.courseCostEnd = courseCostEnd;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -123,13 +173,12 @@ public class CrmCourseType {
                 Objects.equals(courseCost, that.courseCost) &&
                 Objects.equals(total, that.total) &&
                 Objects.equals(courseName, that.courseName) &&
-                Objects.equals(remark, that.remark) &&
-                Objects.equals(crmClassSet, that.crmClassSet);
+                Objects.equals(remark, that.remark);
     }
 
     @Override
     public int hashCode() {
 
-        return Objects.hash(courseTypeId, courseCost, total, courseName, remark,crmClassSet);
+        return Objects.hash(courseTypeId, courseCost, total, courseName, remark);
     }
 }
