@@ -16,4 +16,28 @@ public interface CourseTypeService {
      * @param crmCourseType
      */
     List<CrmCourseType> findAll(CrmCourseType crmCourseType);
+
+
+
+    /**
+     * 通过id查询课程类别详情
+     *
+     * @param courseTypeId 课程类别id
+     * @return 课程类别对象
+     */
+    CrmCourseType findById(String courseTypeId);
+
+
+    /**
+     * 保存或者更新课程类别
+     *
+     * @param crmCourseType 课程类别对象
+     */
+    void addOrEdit(CrmCourseType crmCourseType);
+
+    /**
+     * 不带条件查询所有课程类别
+     * @return 所有课程类别
+     */
+    List<CrmCourseType> findList();
 }

@@ -43,24 +43,24 @@
     <table width="88%" border="0" class="emp_table" style="width:80%;">
         <tr>
             <td width="10%">课程类别：</td>
-            <td><s:textfield name="courseName" size="30"/></td>
+            <td><s:textfield name="courseName" size="30" value=""/></td>
         </tr>
         <tr>
             <td>课程简介：</td>
-            <td><s:textfield name="remark" size="30"/></td>
+            <td><s:textfield name="remark" size="30" value=""/></td>
         </tr>
         <tr>
             <td>总学时：</td>
-            <td><s:textfield name="totalStart" size="12"/>至
-                <s:textfield name="totalEnd" size="12"/>
+            <td><s:textfield name="totalStart" size="12" value=""/>至
+                <s:textfield name="totalEnd" size="12" value=""/>
             </td>
         </tr>
         <tr>
             <td>课程费用：</td>
             <td>
-                <s:textfield name="courseCostStart" size="12"/>
+                <s:textfield name="courseCostStart" size="12" value=""/>
                 至
-                <s:textfield name="courseCostEnd" size="12"/>
+                <s:textfield name="courseCostEnd" size="12" value=""/>
             </td>
         </tr>
     </table>
@@ -90,8 +90,10 @@
             <td align="center">${courseCost}</td>
             <td width="11%" align="center">
 
-                <a href="${pageContext.request.contextPath}/uiAction_coursetype_addOrEditCourse"><img
-                        src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/></a>
+                <s:a namespace="/" action="courseTypeAction_addOrEditUI">
+                    <s:param name="courseTypeId" value="courseTypeId"/>
+                    <img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/>
+                </s:a>
             </td>
         </tr>
     </s:iterator>

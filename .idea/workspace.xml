@@ -8,22 +8,17 @@
   <component name="ChangeListManager">
     <list default="true" id="617a3324-eaa8-426e-8767-0313214fa98b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CRM.iml" afterPath="$PROJECT_DIR$/CRM.iml" />
-      <change beforePath="$PROJECT_DIR$/config/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/config/struts.xml" afterPath="$PROJECT_DIR$/config/struts.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/domain/CrmCourseType.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/domain/CrmCourseType.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/struts.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/struts.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/left.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/left.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/coursetype/addOrEditCourse.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/coursetype/listCourse.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/domain/CrmCourseType.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/domain/CrmCourseType.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/struts.xml" afterPath="$PROJECT_DIR$/out/production/CRM/struts.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java" />
+      <change beforePath="$PROJECT_DIR$/config/struts2/struts-courseType.xml" afterPath="$PROJECT_DIR$/config/struts2/struts-courseType.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/dao/CourseTypeDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/web/action/CourseTypeAction.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/pages/coursetype/addOrEditCourse.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/pages/coursetype/listCourse.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +29,101 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="CourseTypeDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseTypeDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseTypeAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CourseTypeService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addOrEditCourse.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="27" column="81" lean-forward="false" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="26" column="109" lean-forward="false" selection-start-line="26" selection-start-column="109" selection-end-line="26" selection-end-column="109" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listCourse.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="69" column="74" lean-forward="true" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listStaff.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/staff/listStaff.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="94" column="55" lean-forward="true" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts-courseType.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/struts2/struts-courseType.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,19 +149,20 @@
         <option value="$PROJECT_DIR$/src/com/scen/crm/staff/service/StaffService.java" />
         <option value="$PROJECT_DIR$/src/com/scen/crm/staff/service/impl/StaffServiceImpl.java" />
         <option value="$PROJECT_DIR$/config/struts2/struts-staff.xml" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java" />
         <option value="$PROJECT_DIR$/config/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/config/spring/applicationContext-courseType.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp" />
         <option value="$PROJECT_DIR$/config/struts2/struts-post.xml" />
         <option value="$PROJECT_DIR$/config/struts.xml" />
-        <option value="$PROJECT_DIR$/config/struts2/struts-courseType.xml" />
         <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/config/struts2/struts-courseType.xml" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp" />
       </list>
     </option>
   </component>
@@ -118,6 +208,11 @@
             <path>
               <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,12 +425,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518767220369</updated>
-      <workItem from="1518767224597" duration="19383000" />
+      <workItem from="1518767224597" duration="24615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19383000" />
+    <option name="totallyTimeSpent" value="24615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -452,14 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4598">
-          <caret line="121" column="29" lean-forward="true" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/scen/crm/post/dao/PostDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -556,14 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/struts2/struts-staff.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -594,31 +673,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="39" lean-forward="true" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-courseType.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/struts2/struts-courseType.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="11" column="84" lean-forward="true" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/frame/top.jsp">
@@ -637,14 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/struts.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -656,50 +708,101 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java">
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="28" column="72" lean-forward="true" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="140">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/staff/listStaff.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="94" column="55" lean-forward="true" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/coursetype/listCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="69" column="74" lean-forward="true" selection-start-line="69" selection-start-column="74" selection-end-line="69" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="32" column="56" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/struts2/struts-courseType.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="105" column="66" lean-forward="true" selection-start-line="105" selection-start-column="66" selection-end-line="105" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="79" column="34" lean-forward="false" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="27" column="81" lean-forward="false" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="89" column="49" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="49" />
+          <caret line="26" column="109" lean-forward="false" selection-start-line="26" selection-start-column="109" selection-end-line="26" selection-end-column="109" />
           <folding />
         </state>
       </provider>
