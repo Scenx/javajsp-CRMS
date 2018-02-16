@@ -19,6 +19,7 @@
             <file>file://$MODULE_DIR$/config/struts.xml</file>
             <file>file://$MODULE_DIR$/config/struts2/struts-staff.xml</file>
             <file>jar://$MODULE_DIR$/../../struts2-lib/struts2-core-2.5.14.1.jar!/struts-default.xml</file>
+            <file>file://$MODULE_DIR$/config/struts2/struts-post.xml</file>
           </fileset>
           <propertiesKeys disabled="false" />
         </configuration>
@@ -38,6 +39,7 @@
           <file>file://$MODULE_DIR$/config/spring/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/config/spring/applicationContext-staff.xml</file>
           <file>file://$MODULE_DIR$/config/spring/applicationContext-department.xml</file>
+          <file>file://$MODULE_DIR$/config/spring/applicationContext-post.xml</file>
         </fileset>
       </configuration>
     </facet>

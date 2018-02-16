@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <!--员工的配置-->
+    <package name="staff" namespace="/" extends="common">
+        <action name="staffAction_*" class="com.scen.crm.staff.web.action.StaffAction" method="{1}">
+            <!--登陆成功-->
+            <result name="success" type="redirectAction">staffAction_home</result>
+            <!--返回到首页-->
+            <result name="home">/WEB-INF/pages/frame.jsp</result>
+            <!--查询所有-->
+            <result name="findAll">/WEB-INF/pages/staff/listStaff.jsp</result>
+            <result name="editUI">/WEB-INF/pages/staff/editStaff.jsp</result>
+        </action>
+    </package>
+
+</struts>
