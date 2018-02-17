@@ -10,12 +10,10 @@
         <action name="courseTypeAction_*" class="com.scen.crm.coursetype.web.action.CourseTypeAction" method="{1}">
             <!--查询所有-->
             <result name="findAll">/WEB-INF/pages/coursetype/listCourse.jsp</result>
-            <!--不带条件查询所有-->
-            <result name="findList">/WEB-INF/pages/coursetype/listCourse.jsp</result>
             <!--编辑显示jsp-->
             <result name="addOrEditUI">/WEB-INF/pages/coursetype/addOrEditCourse.jsp</result>
             <!--保存成功后返回到list页面-->
-            <result name="addOrEdit" type="redirectAction">courseTypeAction_findList</result>
+            <result name="addOrEdit" type="redirectAction">courseTypeAction_findAll</result>
         </action>
 
     </package>

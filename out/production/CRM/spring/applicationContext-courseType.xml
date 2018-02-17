@@ -5,7 +5,7 @@
 
     <!--课程类别配置项-->
 
-    <bean id="crmCourseType" class="com.scen.crm.coursetype.domain.CrmCourseType"/>
+    <bean id="crmCourseType" class="com.scen.crm.coursetype.domain.CrmCourseType" scope="prototype"/>
 
     <bean id="courseTypeDao" class="com.scen.crm.coursetype.dao.impl.CourseTypeDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>

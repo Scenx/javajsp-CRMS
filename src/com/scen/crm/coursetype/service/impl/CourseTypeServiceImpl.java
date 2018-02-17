@@ -75,8 +75,4 @@ public class CourseTypeServiceImpl implements CourseTypeService {
         courseTypeDao.saveOrUpdate(crmCourseType);
     }
 
-    @Override
-    public List<CrmCourseType> findList() {
-        return courseTypeDao.findList();
-    }
 }

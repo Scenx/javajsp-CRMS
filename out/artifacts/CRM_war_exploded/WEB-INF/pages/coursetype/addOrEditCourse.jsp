@@ -25,14 +25,16 @@
         <td width="52%" align="right">
             <a href="javascript:void(0)" onclick="javascript:document.forms[0].submit();"><img
                     src="${pageContext.request.contextPath}/images/button/save.gif"/></a>
-            <a href="${pageContext.request.contextPath}/courseTypeAction_findList"><img src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
+            <a href="${pageContext.request.contextPath}/courseTypeAction_findAll"><img src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
 
         </td>
         <td width="3%" align="right"><img src="${pageContext.request.contextPath}/images/tright.gif"/></td>
     </tr>
 </table>
 <s:form namespace="/" action="courseTypeAction_addOrEdit">
-    <s:debug/>
+    <s:if test="courseTypeId != null">
+        <s:hidden name="courseTypeId" value="%{courseTypeId}"/>
+    </s:if>
     <table width="88%" border="0" class="emp_table" style="width:80%;">
         <tr>
             <td width="10%">课程类别：</td>

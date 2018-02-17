@@ -5,7 +5,7 @@
 
     <!--职务配置项-->
 
-    <bean id="crmPost" class="com.scen.crm.post.domain.CrmPost"/>
+    <bean id="crmPost" class="com.scen.crm.post.domain.CrmPost" scope="prototype"/>
 
     <bean id="postDao" class="com.scen.crm.post.dao.impl.PostDaoImpl">
         <property name="sessionFactory" ref="sessionFactory"/>

@@ -34,10 +34,4 @@ public interface CourseTypeService {
      * @param crmCourseType 课程类别对象
      */
     void addOrEdit(CrmCourseType crmCourseType);
-
-    /**
-     * 不带条件查询所有课程类别
-     * @return 所有课程类别
-     */
-    List<CrmCourseType> findList();
 }

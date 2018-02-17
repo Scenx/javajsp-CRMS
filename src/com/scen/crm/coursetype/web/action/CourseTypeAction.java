@@ -53,15 +53,7 @@ public class CourseTypeAction extends ActionSupport implements ModelDriven<CrmCo
         return "findAll";
     }
 
-    /**
-     * 不带条件的查询所有
-     * @return 所有课程类别
-     */
-    public String findList() {
-        crmCourseTypes=courseTypeService.findList();
-        return "findList";
-    }
-
+    ////////////////////////////////////////////
 
     /**
      * 编辑时回显课程类别数据
@@ -74,6 +66,8 @@ public class CourseTypeAction extends ActionSupport implements ModelDriven<CrmCo
         return "addOrEditUI";
     }
 
+
+    ///////////////////////////////////////////////////
 
     /**
      * 添加课程类别

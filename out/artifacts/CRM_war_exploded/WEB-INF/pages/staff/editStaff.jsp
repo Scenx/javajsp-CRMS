@@ -27,7 +27,7 @@
                 <img src="${pageContext.request.contextPath}/images/button/save.gif"/>
             </a>
             <!-- 执行js，进行返回 -->
-            <a href="javascript:void(0)" onclick="window.history.go(-1)"><img
+            <a href="${pageContext.request.contextPath}/staffAction_findAll"><img
                     src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
 
         </td>
@@ -35,6 +35,9 @@
     </tr>
 </table>
 <s:form namespace="/" action="staffAction_edit">
+    <s:if test="staffId != null">
+        <s:hidden name="staffId" value="%{staffId}"/>
+    </s:if>
     <table width="88%" border="0" class="emp_table" style="width:80%;">
         <tr>
             <td>登录名：</td>

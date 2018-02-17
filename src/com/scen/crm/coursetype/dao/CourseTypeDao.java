@@ -35,10 +35,4 @@ public interface CourseTypeDao {
      * @param crmCourseType 课程类别对象
      */
     void saveOrUpdate(CrmCourseType crmCourseType);
-
-    /**
-     * 不带条件的查询所有课程类别
-     * @return 所有课程类别
-     */
-    List<CrmCourseType> findList();
 }
