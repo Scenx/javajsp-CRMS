@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 课程类别持久层接口
+ *
  * @author Scen
  * @date 2018/2/16
  */
@@ -15,12 +16,12 @@ public class CourseTypeDaoImpl extends HibernateDaoSupport implements CourseType
     @Override
     public List<CrmCourseType> findAll(String condition, Object[] params) {
         String hql = "from CrmCourseType where 1=1" + condition;
-        return (List<CrmCourseType>) this.getHibernateTemplate().find(hql,params);
+        return (List<CrmCourseType>) this.getHibernateTemplate().find(hql, params);
     }
 
     @Override
     public CrmCourseType findById(String courseTypeId) {
-        return this.getHibernateTemplate().get(CrmCourseType.class,courseTypeId);
+        return this.getHibernateTemplate().get(CrmCourseType.class, courseTypeId);
     }
 
     @Override

@@ -6,17 +6,18 @@ import java.util.List;
 
 /**
  * 课程类别业务层接口
+ *
  * @author Scen
  * @date 2018/2/16
  */
 public interface CourseTypeService {
     /**
      * 查询所有课程类别
-     * @return 所有课程类别对象
+     *
      * @param crmCourseType
+     * @return 所有课程类别对象
      */
     List<CrmCourseType> findAll(CrmCourseType crmCourseType);
-
 
 
     /**

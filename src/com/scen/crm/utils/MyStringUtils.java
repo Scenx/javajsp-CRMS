@@ -22,7 +22,7 @@ public class MyStringUtils {
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("MD5");
             byte[] md5ValueByteArray = messageDigest.digest(value.getBytes());
-            BigInteger bigInteger = new BigInteger(1,md5ValueByteArray);
+            BigInteger bigInteger = new BigInteger(1, md5ValueByteArray);
             return bigInteger.toString(16);
         } catch (NoSuchAlgorithmException e) {
             //如果出现异常 返回默认值

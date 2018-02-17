@@ -10,6 +10,7 @@ import java.util.Set;
 
 /**
  * 部门数据模型
+ *
  * @author Scen
  * @date 2018/2/12
  */

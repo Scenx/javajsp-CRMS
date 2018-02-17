@@ -35,6 +35,7 @@
     </tr>
 </table>
 <s:form namespace="/" action="staffAction_edit">
+    <s:debug/>
     <s:if test="staffId != null">
         <s:hidden name="staffId" value="%{staffId}"/>
     </s:if>
@@ -106,7 +107,7 @@
                     var postObj = jsonData[i];
                     var postId = postObj.postId;
                     var postName = postObj.postName;
-                    postSelectElement.innerHTML+="<option value='"+postId+"' selected='selected'>"+postName+"</option>";
+                    postSelectElement.innerHTML += "<option value='" + postId + "' selected='selected'>" + postName + "</option>";
                 }
             }
         }

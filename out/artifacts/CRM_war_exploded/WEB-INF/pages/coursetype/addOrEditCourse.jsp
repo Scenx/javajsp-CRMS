@@ -25,7 +25,8 @@
         <td width="52%" align="right">
             <a href="javascript:void(0)" onclick="javascript:document.forms[0].submit();"><img
                     src="${pageContext.request.contextPath}/images/button/save.gif"/></a>
-            <a href="${pageContext.request.contextPath}/courseTypeAction_findAll"><img src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
+            <a href="${pageContext.request.contextPath}/courseTypeAction_findAll"><img
+                    src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
 
         </td>
         <td width="3%" align="right"><img src="${pageContext.request.contextPath}/images/tright.gif"/></td>

@@ -13,6 +13,7 @@ import java.util.List;
 
 /**
  * 职务表现层
+ *
  * @author Scen
  * @date 2018/2/15
  */
@@ -48,15 +49,16 @@ public class PostAction extends ActionSupport implements ModelDriven<CrmPost> {
 
     /**
      * ajax通过部门，查询所有的职务
+     *
      * @return
      */
     public String findAllWithDepartment() throws IOException {
         crmPosts = postService.findAll(crmPost.getCrmDepartment());
 
         JsonConfig jsonConfig = new JsonConfig();
-        jsonConfig.setExcludes(new String[]{"crmDepartment","staffSet"});
+        jsonConfig.setExcludes(new String[]{"crmDepartment", "staffSet"});
 
-        String jsonData = JSONArray.fromObject(crmPosts,jsonConfig).toString();
+        String jsonData = JSONArray.fromObject(crmPosts, jsonConfig).toString();
         ServletActionContext.getResponse().setContentType("text/html;charset=UTF-8");
         ServletActionContext.getResponse().getWriter().print(jsonData);
         return "none";

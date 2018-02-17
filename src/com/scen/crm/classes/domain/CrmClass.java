@@ -9,6 +9,7 @@ import java.util.Objects;
 
 /**
  * 班级数据模型
+ *
  * @author Scen
  * @date 2018/2/13
  */
@@ -256,6 +257,6 @@ public class CrmClass {
     @Override
     public int hashCode() {
 
-        return Objects.hash(classId, name, beginTime, endTime, status, totalCount, upgradeCount, changeCount, runoffCount, remark, uploadTime, uploadPath, uploadFilename,crmCourseType);
+        return Objects.hash(classId, name, beginTime, endTime, status, totalCount, upgradeCount, changeCount, runoffCount, remark, uploadTime, uploadPath, uploadFilename, crmCourseType);
     }
 }

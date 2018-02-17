@@ -11,6 +11,7 @@ import java.util.Set;
 
 /**
  * 职位数据模型
+ *
  * @author Scen
  * @date 2018/2/12
  */
@@ -96,6 +97,6 @@ public class CrmPost {
     @Override
     public int hashCode() {
 
-        return Objects.hash(postId, postName,crmDepartment);
+        return Objects.hash(postId, postName, crmDepartment);
     }
 }

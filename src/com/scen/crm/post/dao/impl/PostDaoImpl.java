@@ -9,12 +9,13 @@ import java.util.List;
 
 /**
  * 职务持久层实现类
+ *
  * @author Scen
  * @date 2018/2/15
  */
 public class PostDaoImpl extends HibernateDaoSupport implements PostDao {
     @Override
     public List<CrmPost> findAll(CrmDepartment crmDepartment) {
-        return (List<CrmPost>) this.getHibernateTemplate().find("from CrmPost where crmDepartment=?",crmDepartment);
+        return (List<CrmPost>) this.getHibernateTemplate().find("from CrmPost where crmDepartment=?", crmDepartment);
     }
 }

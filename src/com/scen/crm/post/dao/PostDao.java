@@ -7,12 +7,14 @@ import java.util.List;
 
 /**
  * 职务持久层接口
+ *
  * @author Scen
  * @date 2018/2/15
  */
-public interface PostDao{
+public interface PostDao {
     /**
      * 查询指定部门的所有职务
+     *
      * @param crmDepartment 指定部门
      * @return 指定部门的所有职务
      */

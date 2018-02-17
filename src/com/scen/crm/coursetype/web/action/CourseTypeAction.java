@@ -1,10 +1,10 @@
 package com.scen.crm.coursetype.web.action;
 
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.scen.crm.coursetype.domain.CrmCourseType;
 import com.scen.crm.coursetype.service.CourseTypeService;
+import org.springframework.beans.BeanUtils;
 
 import java.util.List;
 
@@ -61,8 +61,7 @@ public class CourseTypeAction extends ActionSupport implements ModelDriven<CrmCo
      * @return 显示课程类别的数据到编辑页面
      */
     public String addOrEditUI() {
-        crmCourseType = courseTypeService.findById(crmCourseType.getCourseTypeId());
-        ActionContext.getContext().getValueStack().push(crmCourseType);
+        BeanUtils.copyProperties(courseTypeService.findById(crmCourseType.getCourseTypeId()), crmCourseType);
         return "addOrEditUI";
     }
 

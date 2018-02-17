@@ -94,7 +94,7 @@
             <td align="center">${crmPost.crmDepartment.depName}</td>
             <td align="center">${crmPost.postName}</td>
             <td width="7%" align="center">
-                <%--编辑前的查询操作--%>
+                    <%--编辑前的查询操作--%>
                 <s:a namespace="/" action="staffAction_editUI">
                     <s:param name="staffId" value="staffId"/>
                     <img src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/>

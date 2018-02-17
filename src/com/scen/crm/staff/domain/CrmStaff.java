@@ -9,6 +9,7 @@ import java.util.Objects;
 
 /**
  * 员工数据模型
+ *
  * @author Scen
  * @date 2018/2/12
  */
@@ -145,6 +146,6 @@ public class CrmStaff {
     @Override
     public int hashCode() {
 
-        return Objects.hash(staffId, loginName, loginPwd, staffName, gender, onDutyDate,crmPost);
+        return Objects.hash(staffId, loginName, loginPwd, staffName, gender, onDutyDate, crmPost);
     }
 }

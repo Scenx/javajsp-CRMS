@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="CRM:war exploded" />
@@ -8,42 +11,143 @@
   <component name="ChangeListManager">
     <list default="true" id="617a3324-eaa8-426e-8767-0313214fa98b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/config/spring/applicationContext-courseType.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext-courseType.xml" />
-      <change beforePath="$PROJECT_DIR$/config/spring/applicationContext-department.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext-department.xml" />
-      <change beforePath="$PROJECT_DIR$/config/spring/applicationContext-post.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext-post.xml" />
-      <change beforePath="$PROJECT_DIR$/config/spring/applicationContext-staff.xml" afterPath="$PROJECT_DIR$/config/spring/applicationContext-staff.xml" />
-      <change beforePath="$PROJECT_DIR$/config/struts2/struts-courseType.xml" afterPath="$PROJECT_DIR$/config/struts2/struts-courseType.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/dao/CourseTypeDao.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/dao/CourseTypeDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/classes/domain/CrmClass.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/classes/domain/CrmClass.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/service/CourseTypeService.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/service/CourseTypeService.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/domain/CrmCourseType.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/domain/CrmCourseType.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/web/action/CourseTypeAction.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/coursetype/web/action/CourseTypeAction.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-courseType.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-courseType.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-department.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-department.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-post.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-post.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-staff.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/spring/applicationContext-staff.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/struts2/struts-courseType.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/struts2/struts-courseType.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/department/dao/impl/DepartmentDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/department/dao/impl/DepartmentDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/department/domain/CrmDepartment.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/department/domain/CrmDepartment.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/department/service/impl/DepartmentServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/department/service/impl/DepartmentServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/dao/impl/PostDaoImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/dao/impl/PostDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/domain/CrmPost.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/domain/CrmPost.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/service/impl/PostServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/service/impl/PostServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/web/action/PostAction.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/post/web/action/PostAction.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/staff/domain/CrmStaff.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/staff/domain/CrmStaff.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/staff/web/action/StaffAction.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/staff/web/action/StaffAction.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/web/interceptor/LoginInterceptor.class" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/classes/com/scen/crm/web/interceptor/LoginInterceptor.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/coursetype/addOrEditCourse.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/coursetype/addOrEditCourse.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/left.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/left.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/left2.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/left2.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/right.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/frame/right.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/addStaff.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/addStaff.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/editStaff.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/editStaff.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/dao/CourseTypeDao.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/dao/CourseTypeDao.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/listStaff.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/listStaff.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/updPwd.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/pages/staff/updPwd.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/css/dtree.css" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/css/dtree.css" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/css/style.css" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/css/sys.css" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/css/sys.css" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/js/Calendar.js" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/js/Calendar.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/js/core.js" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/js/core.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/js/dtree.js" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/js/dtree.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/addOrEditClass.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/addOrEditClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/getCalssState.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/getCalssState.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/listClass.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/listClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/showClass.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/showClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/uploadClass.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/classesm/uploadClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/department/addOrEditDepartment.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/department/addOrEditDepartment.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/department/listDepartment.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/department/listDepartment.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/error.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/error.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/follow/addOrEditFollow.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/follow/addOrEditFollow.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/graduate/addOrEditGraduate.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/graduate/addOrEditGraduate.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/graduate/listGraduate.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/graduate/listGraduate.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/post/addOrEditPost.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/post/addOrEditPost.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/post/listPost.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/post/listPost.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/addOrEditRefer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/addOrEditRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/addRefer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/addRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/addStudent.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/addStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/editRefer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/editRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/listRefer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/listRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/showRefer.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/refer/showRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/runoff/addRunoff.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/runoff/addRunoff.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/runoff/listRunoff.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/runoff/listRunoff.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/station/editStation.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/station/editStation.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/station/listStation.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/station/listStation.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/student/addOrEditStudent.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/student/addOrEditStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/student/listStudent.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/student/listStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/student/showStudent.jsp" afterPath="$PROJECT_DIR$/out/artifacts/CRM_war_exploded/pages/student/showStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/classes/domain/CrmClass.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/classes/domain/CrmClass.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/service/CourseTypeService.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/service/CourseTypeService.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/domain/CrmCourseType.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/domain/CrmCourseType.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.class" />
       <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/web/action/CourseTypeAction.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/coursetype/web/action/CourseTypeAction.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-courseType.xml" afterPath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-courseType.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-department.xml" afterPath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-department.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-post.xml" afterPath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-post.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-staff.xml" afterPath="$PROJECT_DIR$/out/production/CRM/spring/applicationContext-staff.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/CRM/struts2/struts-courseType.xml" afterPath="$PROJECT_DIR$/out/production/CRM/struts2/struts-courseType.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/department/dao/impl/DepartmentDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/department/dao/impl/DepartmentDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/department/domain/CrmDepartment.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/department/domain/CrmDepartment.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/department/service/impl/DepartmentServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/department/service/impl/DepartmentServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/dao/impl/PostDaoImpl.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/dao/impl/PostDaoImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/domain/CrmPost.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/domain/CrmPost.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/service/impl/PostServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/service/impl/PostServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/web/action/PostAction.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/post/web/action/PostAction.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/staff/domain/CrmStaff.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/staff/domain/CrmStaff.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/staff/web/action/StaffAction.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/staff/web/action/StaffAction.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/web/interceptor/LoginInterceptor.class" afterPath="$PROJECT_DIR$/out/production/CRM/com/scen/crm/web/interceptor/LoginInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/classes/domain/CrmClass.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/classes/domain/CrmClass.java" />
       <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/domain/CrmCourseType.java" />
       <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/CourseTypeService.java" />
       <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/service/impl/CourseTypeServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/department/dao/DepartmentDao.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/department/dao/DepartmentDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/department/dao/impl/DepartmentDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/department/dao/impl/DepartmentDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/department/domain/CrmDepartment.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/department/domain/CrmDepartment.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/department/service/DepartmentService.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/department/service/DepartmentService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/department/service/impl/DepartmentServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/department/service/impl/DepartmentServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/post/dao/PostDao.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/post/dao/PostDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/post/dao/impl/PostDaoImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/post/dao/impl/PostDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/post/domain/CrmPost.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/post/domain/CrmPost.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/post/service/PostService.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/post/service/PostService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/post/service/impl/PostServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/post/service/impl/PostServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/post/web/action/PostAction.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/post/web/action/PostAction.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/staff/dao/StaffDao.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/staff/dao/StaffDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/staff/domain/CrmStaff.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/staff/domain/CrmStaff.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/staff/service/StaffService.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/staff/service/StaffService.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/utils/MyStringUtils.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/utils/MyStringUtils.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/scen/crm/web/interceptor/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/com/scen/crm/web/interceptor/LoginInterceptor.java" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/frame/left.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/frame/left2.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/frame/left2.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/frame/right.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/frame/right.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/staff/addStaff.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/staff/addStaff.jsp" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/staff/editStaff.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/staff/editStaff.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/staff/listStaff.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/staff/listStaff.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/staff/register.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/staff/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/pages/staff/updPwd.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/staff/updPwd.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/web/css/dtree.css" afterPath="$PROJECT_DIR$/web/css/dtree.css" />
+      <change beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/web/css/sys.css" afterPath="$PROJECT_DIR$/web/css/sys.css" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/js/Calendar.js" afterPath="$PROJECT_DIR$/web/js/Calendar.js" />
+      <change beforePath="$PROJECT_DIR$/web/js/core.js" afterPath="$PROJECT_DIR$/web/js/core.js" />
+      <change beforePath="$PROJECT_DIR$/web/js/dtree.js" afterPath="$PROJECT_DIR$/web/js/dtree.js" />
+      <change beforePath="$PROJECT_DIR$/web/pages/classesm/addOrEditClass.jsp" afterPath="$PROJECT_DIR$/web/pages/classesm/addOrEditClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/classesm/getCalssState.jsp" afterPath="$PROJECT_DIR$/web/pages/classesm/getCalssState.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/classesm/listClass.jsp" afterPath="$PROJECT_DIR$/web/pages/classesm/listClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/classesm/showClass.jsp" afterPath="$PROJECT_DIR$/web/pages/classesm/showClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/classesm/uploadClass.jsp" afterPath="$PROJECT_DIR$/web/pages/classesm/uploadClass.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/department/addOrEditDepartment.jsp" afterPath="$PROJECT_DIR$/web/pages/department/addOrEditDepartment.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/department/listDepartment.jsp" afterPath="$PROJECT_DIR$/web/pages/department/listDepartment.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/error.jsp" afterPath="$PROJECT_DIR$/web/pages/error.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/follow/addOrEditFollow.jsp" afterPath="$PROJECT_DIR$/web/pages/follow/addOrEditFollow.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/graduate/addOrEditGraduate.jsp" afterPath="$PROJECT_DIR$/web/pages/graduate/addOrEditGraduate.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/graduate/listGraduate.jsp" afterPath="$PROJECT_DIR$/web/pages/graduate/listGraduate.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/post/addOrEditPost.jsp" afterPath="$PROJECT_DIR$/web/pages/post/addOrEditPost.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/post/listPost.jsp" afterPath="$PROJECT_DIR$/web/pages/post/listPost.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/refer/addOrEditRefer.jsp" afterPath="$PROJECT_DIR$/web/pages/refer/addOrEditRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/refer/addRefer.jsp" afterPath="$PROJECT_DIR$/web/pages/refer/addRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/refer/addStudent.jsp" afterPath="$PROJECT_DIR$/web/pages/refer/addStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/refer/editRefer.jsp" afterPath="$PROJECT_DIR$/web/pages/refer/editRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/refer/listRefer.jsp" afterPath="$PROJECT_DIR$/web/pages/refer/listRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/refer/showRefer.jsp" afterPath="$PROJECT_DIR$/web/pages/refer/showRefer.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/runoff/addRunoff.jsp" afterPath="$PROJECT_DIR$/web/pages/runoff/addRunoff.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/runoff/listRunoff.jsp" afterPath="$PROJECT_DIR$/web/pages/runoff/listRunoff.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/station/editStation.jsp" afterPath="$PROJECT_DIR$/web/pages/station/editStation.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/station/listStation.jsp" afterPath="$PROJECT_DIR$/web/pages/station/listStation.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/student/addOrEditStudent.jsp" afterPath="$PROJECT_DIR$/web/pages/student/addOrEditStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/student/listStudent.jsp" afterPath="$PROJECT_DIR$/web/pages/student/listStudent.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/pages/student/showStudent.jsp" afterPath="$PROJECT_DIR$/web/pages/student/showStudent.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +158,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="CourseTypeAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +178,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ActionContext.getContext().getValueStack()</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,12 +211,12 @@
         <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/CourseTypeDao.java" />
         <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/dao/impl/CourseTypeDaoImpl.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/coursetype/addOrEditCourse.jsp" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" />
         <option value="$PROJECT_DIR$/config/spring/applicationContext-staff.xml" />
         <option value="$PROJECT_DIR$/config/spring/applicationContext-department.xml" />
         <option value="$PROJECT_DIR$/config/spring/applicationContext-post.xml" />
-        <option value="$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/staff/editStaff.jsp" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java" />
+        <option value="$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java" />
       </list>
     </option>
   </component>
@@ -142,6 +262,62 @@
             <path>
               <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="scen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="scen" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="scen" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="coursetype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="scen" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="coursetype" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javajsp-CRMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javajsp-CRMS" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="scen" type="462c0819:PsiDirectoryNode" />
+              <item name="crm" type="462c0819:PsiDirectoryNode" />
+              <item name="coursetype" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,15 +531,16 @@
       <option name="presentableId" value="Default" />
       <updated>1518767220369</updated>
       <workItem from="1518767224597" duration="24758000" />
-      <workItem from="1518842266181" duration="5082000" />
+      <workItem from="1518842266181" duration="8693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29840000" />
+    <option name="totallyTimeSpent" value="33451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -383,12 +560,13 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14861111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14861111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -396,7 +574,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -450,7 +627,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -523,6 +700,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -530,6 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -537,6 +716,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -544,6 +724,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -551,6 +732,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -558,6 +740,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -565,6 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -572,6 +756,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -579,6 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -586,6 +772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -593,6 +780,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -600,6 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -607,13 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6194">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -671,6 +853,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,46 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-staff.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="7" column="86" lean-forward="true" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-courseType.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="98" selection-end-line="7" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-department.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="98" selection-end-line="7" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-post.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/staff/listStaff.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -793,14 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/staff/editStaff.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -829,18 +964,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-post.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-department.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="98" lean-forward="false" selection-start-line="7" selection-start-column="98" selection-end-line="7" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-courseType.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/staff/editStaff.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="66" column="58" lean-forward="false" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../spring-lib/spring-beans-4.3.14.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-600">
+          <caret line="297" column="70" lean-forward="true" selection-start-line="297" selection-start-column="70" selection-end-line="297" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/spring/applicationContext-staff.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="86" lean-forward="false" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/scen/crm/staff/web/action/StaffAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="121" column="27" lean-forward="true" selection-start-line="121" selection-start-column="27" selection-end-line="121" selection-end-column="27" />
+        <state relative-caret-position="360">
+          <caret line="114" column="26" lean-forward="false" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/scen/crm/post/web/action/PostAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        <state relative-caret-position="1710">
+          <caret line="61" column="84" lean-forward="false" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/scen/crm/coursetype/web/action/CourseTypeAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="63" column="32" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 <%-- 用于显示班级状态信息 --%>
 <s:set value="new java.util.Date()" var="nowDate"></s:set>
 <%--1 现在  小于 开始 --%>

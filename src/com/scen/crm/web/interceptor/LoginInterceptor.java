@@ -7,6 +7,7 @@ import com.opensymphony.xwork2.interceptor.MethodFilterInterceptor;
 
 /**
  * 登录拦截器
+ *
  * @author Scen
  * @date 2018/2/14
  */
@@ -18,7 +19,7 @@ public class LoginInterceptor extends MethodFilterInterceptor {
             Object action = actionInvocation.getAction();
             if (action instanceof ActionSupport) {
                 ActionSupport actionSupport = (ActionSupport) action;
-                actionSupport.addFieldError("","请登录");
+                actionSupport.addFieldError("", "请登录");
             }
             return "login";
         } else {
