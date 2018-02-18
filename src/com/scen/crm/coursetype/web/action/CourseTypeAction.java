@@ -4,6 +4,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.scen.crm.coursetype.domain.CrmCourseType;
 import com.scen.crm.coursetype.service.CourseTypeService;
+import com.scen.crm.page.PageBean;
 import org.springframework.beans.BeanUtils;
 
 import java.util.List;
@@ -37,10 +38,28 @@ public class CourseTypeAction extends ActionSupport implements ModelDriven<CrmCo
     }
     ///////////////////////////////////////////////////////////
 
+    private int pageNum = 1;
+
+    public void setPageNum(int pageNum) {
+        this.pageNum = pageNum;
+    }
+
+    private int pageSize = 2;
+
+    public void setPageSize(int pageSize) {
+        this.pageSize = pageSize;
+    }
+
     List<CrmCourseType> crmCourseTypes;
 
     public List<CrmCourseType> getCrmCourseTypes() {
         return crmCourseTypes;
+    }
+
+    PageBean<CrmCourseType> pageBean;
+
+    public PageBean<CrmCourseType> getPageBean() {
+        return pageBean;
     }
 
     /**
@@ -49,7 +68,7 @@ public class CourseTypeAction extends ActionSupport implements ModelDriven<CrmCo
      * @return 回显结果
      */
     public String findAll() {
-        crmCourseTypes = courseTypeService.findAll(crmCourseType);
+        pageBean = courseTypeService.findAll(crmCourseType, pageNum, pageSize);
         return "findAll";
     }
 

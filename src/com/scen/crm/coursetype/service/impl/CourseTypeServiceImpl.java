@@ -3,6 +3,7 @@ package com.scen.crm.coursetype.service.impl;
 import com.scen.crm.coursetype.dao.CourseTypeDao;
 import com.scen.crm.coursetype.domain.CrmCourseType;
 import com.scen.crm.coursetype.service.CourseTypeService;
+import com.scen.crm.page.PageBean;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
@@ -23,7 +24,18 @@ public class CourseTypeServiceImpl implements CourseTypeService {
     }
 
     @Override
-    public List<CrmCourseType> findAll(CrmCourseType crmCourseType) {
+    public CrmCourseType findById(String courseTypeId) {
+        return courseTypeDao.findById(courseTypeId);
+    }
+
+    @Override
+    public void addOrEdit(CrmCourseType crmCourseType) {
+        courseTypeDao.saveOrUpdate(crmCourseType);
+    }
+
+    @Override
+    public PageBean<CrmCourseType> findAll(CrmCourseType crmCourseType, int pageNum, int pageSize) {
+
         StringBuilder stringBuilder = new StringBuilder();
         List<Object> paramses = new ArrayList<Object>();
 
@@ -63,17 +75,16 @@ public class CourseTypeServiceImpl implements CourseTypeService {
 
         String condition = stringBuilder.toString();
         Object[] params = paramses.toArray();
-        return courseTypeDao.findAll(condition, params);
-    }
 
-    @Override
-    public CrmCourseType findById(String courseTypeId) {
-        return courseTypeDao.findById(courseTypeId);
-    }
+        int totalRecord = courseTypeDao.getTotalRecord(condition, params);
 
-    @Override
-    public void addOrEdit(CrmCourseType crmCourseType) {
-        courseTypeDao.saveOrUpdate(crmCourseType);
+        PageBean<CrmCourseType> pageBean = new PageBean<CrmCourseType>(pageNum, pageSize, totalRecord);
+
+        List<CrmCourseType> data = courseTypeDao.findAll(condition, params, pageBean.getStartIndex(), pageBean.getPageSize());
+
+        pageBean.setData(data);
+
+        return pageBean;
     }
 
 }

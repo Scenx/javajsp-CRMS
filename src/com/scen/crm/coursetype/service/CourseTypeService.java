@@ -1,6 +1,7 @@
 package com.scen.crm.coursetype.service;
 
 import com.scen.crm.coursetype.domain.CrmCourseType;
+import com.scen.crm.page.PageBean;
 
 import java.util.List;
 
@@ -11,15 +12,6 @@ import java.util.List;
  * @date 2018/2/16
  */
 public interface CourseTypeService {
-    /**
-     * 查询所有课程类别
-     *
-     * @param crmCourseType
-     * @return 所有课程类别对象
-     */
-    List<CrmCourseType> findAll(CrmCourseType crmCourseType);
-
-
     /**
      * 通过id查询课程类别详情
      *
@@ -35,4 +27,14 @@ public interface CourseTypeService {
      * @param crmCourseType 课程类别对象
      */
     void addOrEdit(CrmCourseType crmCourseType);
+
+    /**
+     * 分页+条件查询
+     *
+     * @param crmCourseType
+     * @param pageNum
+     * @param pageSize
+     * @return 当前页数据
+     */
+    PageBean<CrmCourseType> findAll(CrmCourseType crmCourseType, int pageNum, int pageSize);
 }

@@ -40,27 +40,29 @@
 <%--条件查询 start --%>
 
 <s:form namespace="/" action="courseTypeAction_findAll">
+    <s:debug/>
+    <s:hidden id="pageNum" name="pageNum" value="1"/>
     <table width="88%" border="0" class="emp_table" style="width:80%;">
         <tr>
             <td width="10%">课程类别：</td>
-            <td><s:textfield name="courseName" size="30" value=""/></td>
+            <td><s:textfield name="courseName" size="30"/></td>
         </tr>
         <tr>
             <td>课程简介：</td>
-            <td><s:textfield name="remark" size="30" value=""/></td>
+            <td><s:textfield name="remark" size="30"/></td>
         </tr>
         <tr>
             <td>总学时：</td>
-            <td><s:textfield name="totalStart" size="12" value=""/>至
-                <s:textfield name="totalEnd" size="12" value=""/>
+            <td><s:textfield name="totalStart" size="12"/>至
+                <s:textfield name="totalEnd" size="12"/>
             </td>
         </tr>
         <tr>
             <td>课程费用：</td>
             <td>
-                <s:textfield name="courseCostStart" size="12" value=""/>
+                <s:textfield name="courseCostStart" size="12"/>
                 至
-                <s:textfield name="courseCostEnd" size="12" value=""/>
+                <s:textfield name="courseCostEnd" size="12"/>
             </td>
         </tr>
     </table>
@@ -82,7 +84,7 @@
         <td width="11%" align="center">编辑</td>
     </tr>
     <%--数据展示，单行：tabtd1；双行：tabtd2 --%>
-    <s:iterator value="crmCourseTypes" status="vs">
+    <s:iterator value="pageBean.data" status="vs">
         <tr class="${vs.even ? 'tabtd2':'tabtd1'}">
             <td align="center">${courseName}</td>
             <td align="center">${remark}</td>
@@ -101,15 +103,43 @@
 <table border="0" cellspacing="0" cellpadding="0" align="center">
     <tr>
         <td align="right">
-            <span>第1/3页</span>
+            <span>第${pageBean.pageNum}/${pageBean.totalPage}页</span>
             <span>
-        	<a href="#">[首页]</a>&nbsp;&nbsp;
-            <a href="#">[上一页]</a>&nbsp;&nbsp;
-            <a href="#">[下一页]</a>&nbsp;&nbsp;
-            <a href="#">[尾页]</a>
+                <s:if test="pageBean.pageNum>1">
+                <a href="javascript:void(0)" onclick="showPage(1)">
+                [首页]
+            </a>&nbsp;&nbsp;
+
+                <a href="javascript:void(0)" onclick="showPage(${pageBean.pageNum-1})">
+                [上一页]
+            </a>&nbsp;&nbsp;
+                </s:if>
+
+
+                <%--动态显示条--%>
+                <s:iterator begin="pageBean.start" end="pageBean.end" var="num">
+                    <a href="javascript:void(0)" onclick="showPage(${num})">
+                ${num}
+            </a>&nbsp;&nbsp;
+                </s:iterator>
+
+                <s:if test="pageBean.pageNum<pageBean.totalPage">
+            <a href="javascript:void(0)" onclick="showPage(${pageBean.pageNum+1})">
+                [下一页]
+            </a>&nbsp;&nbsp;
+            <a href="javascript:void(0)" onclick="showPage(${pageBean.totalPage})">
+                [尾页]
+            </a>&nbsp;&nbsp;
+                </s:if>
         </span>
         </td>
     </tr>
 </table>
+<script type="text/javascript">
+    function showPage(num) {
+        document.getElementById("pageNum").value = num;
+        document.forms[0].submit();
+    }
+</script>
 </body>
 </html>
