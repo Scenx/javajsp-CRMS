@@ -40,7 +40,6 @@
 <%--条件查询 start --%>
 
 <s:form namespace="/" action="courseTypeAction_findAll">
-    <s:debug/>
     <s:hidden id="pageNum" name="pageNum" value="1"/>
     <table width="88%" border="0" class="emp_table" style="width:80%;">
         <tr>

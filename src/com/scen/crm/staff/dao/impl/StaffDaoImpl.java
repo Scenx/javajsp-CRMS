@@ -1,8 +1,9 @@
 package com.scen.crm.staff.dao.impl;
 
+import com.scen.crm.base.impl.BaseDaoImpl;
 import com.scen.crm.staff.dao.StaffDao;
 import com.scen.crm.staff.domain.CrmStaff;
-import org.springframework.orm.hibernate5.support.HibernateDaoSupport;
+
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * @author Scen
  * @date 2018/2/14
  */
-public class StaffDaoImpl extends HibernateDaoSupport implements StaffDao {
+public class StaffDaoImpl extends BaseDaoImpl<CrmStaff> implements StaffDao {
     @Override
     public CrmStaff find(String loginName, String loginPwd) {
         List<CrmStaff> crmStaffList = (List<CrmStaff>) this.getHibernateTemplate().find("from CrmStaff where loginName=? and loginPwd=?", loginName, loginPwd);
@@ -23,14 +24,5 @@ public class StaffDaoImpl extends HibernateDaoSupport implements StaffDao {
         }
     }
 
-    @Override
-    public List<CrmStaff> findAll() {
-        return (List<CrmStaff>) this.getHibernateTemplate().find("from CrmStaff");
-    }
-
-    @Override
-    public CrmStaff findById(String staffId) {
-        return this.getHibernateTemplate().get(CrmStaff.class, staffId);
-    }
 
 }

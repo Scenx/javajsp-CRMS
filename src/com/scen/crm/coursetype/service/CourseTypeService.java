@@ -3,7 +3,6 @@ package com.scen.crm.coursetype.service;
 import com.scen.crm.coursetype.domain.CrmCourseType;
 import com.scen.crm.page.PageBean;
 
-import java.util.List;
 
 /**
  * 课程类别业务层接口

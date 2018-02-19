@@ -1,5 +1,6 @@
 package com.scen.crm.post.dao;
 
+import com.scen.crm.base.BaseDao;
 import com.scen.crm.department.domain.CrmDepartment;
 import com.scen.crm.post.domain.CrmPost;
 
@@ -11,7 +12,7 @@ import java.util.List;
  * @author Scen
  * @date 2018/2/15
  */
-public interface PostDao {
+public interface PostDao extends BaseDao<CrmPost>{
     /**
      * 查询指定部门的所有职务
      *

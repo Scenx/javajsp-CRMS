@@ -1,8 +1,9 @@
 package com.scen.crm.department.dao;
 
+import com.scen.crm.base.BaseDao;
 import com.scen.crm.department.domain.CrmDepartment;
 
-import java.util.List;
+
 
 /**
  * 部门持久层接口
@@ -10,12 +11,6 @@ import java.util.List;
  * @author Scen
  * @date 2018/2/15
  */
-public interface DepartmentDao {
+public interface DepartmentDao extends BaseDao<CrmDepartment> {
 
-    /**
-     * 查询所有的部门
-     *
-     * @return 所有部门
-     */
-    List<CrmDepartment> findAll();
 }
