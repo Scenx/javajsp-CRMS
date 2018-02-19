@@ -19,50 +19,57 @@
 <table border="0" cellspacing="0" cellpadding="0" class="wukuang" width="100%">
     <tr>
         <td width="1%"><img src="${pageContext.request.contextPath}/images/tleft.gif"/></td>
-        <td width="44%" align="left">[课表上传]</td>
+        <td width="44%" align="left">[编辑班级]</td>
 
         <td width="52%" align="right">
             <a href="javascript:void(0)" onclick="javascript:document.forms[0].submit();">
                 <img src="${pageContext.request.contextPath}/images/button/save.gif"/>
             </a>
-            <a href="javascript:void(0)" onclick="history.go(-1)"><img
-                    src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
+            <a href="#"><img src="${pageContext.request.contextPath}/images/button/tuihui.gif"/></a>
 
         </td>
         <td width="3%" align="right"><img src="${pageContext.request.contextPath}/images/tright.gif"/></td>
     </tr>
 </table>
 
-<form action="/crm2/classesm/classAction_upload.action" method="post" enctype="multipart/form-data">
+<form action="${pageContext.request.contextPath}/WEB-INF/classesm/listClass.jsp" method="post">
+
     <table width="88%" border="0" class="emp_table" style="width:80%;">
         <tr>
-            <td width="120">课程类别：</td>
-            <td>java基础</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>班级：</td>
-            <td>1期</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>上次上传时间：</td>
-            <td>2015-04-02</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>选择课表：</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td colspan="3">
-                <input type="file" name="schedule" value=""/>
+            <td width="10%">班级名称：</td>
+            <td width="20%"><input type="text" name="name" value=""/></td>
+            <td width="8%">所属类别：</td>
+            <td width="62%">
+                <select name="crmCourseType.courseTypeId">
+                    <option value="">---请选择---</option>
+                    <option value="2c9091c14c78e58b014c78e829b70008">java基础</option>
+                    <option value="2c9091c14c78e58b014c78e867b80009">java就业</option>
+                </select>
             </td>
+        </tr>
+        <tr>
+            <td>开课时间：</td>
+            <td>
+                <input type="text" name="beginTime" value="" readonly="readonly"
+                       onfocus="c.showMoreDay=true; c.show(this);"/>
+            </td>
+            <td>结业时间：</td>
+            <td>
+                <input type="text" name="endTime" value="" readonly="readonly"
+                       onfocus="c.showMoreDay=true; c.show(this);"/>
+            </td>
+        </tr>
+        <tr>
+            <td>其他说明：</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="4"><textarea name="remark" cols="60" rows="10"></textarea></td>
         </tr>
     </table>
 </form>
 
 </body>
 </html>
-    

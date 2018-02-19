@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--班级配置项-->
+
+    <bean id="crmClass" class="com.scen.crm.classes.domain.CrmClass" scope="prototype"/>
+
+    <bean id="classesDao" class="com.scen.crm.classes.dao.impl.ClassesDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="classesService" class="com.scen.crm.classes.service.impl.ClassesServiceImpl">
+        <property name="classesDao" ref="classesDao"/>
+    </bean>
+</beans>

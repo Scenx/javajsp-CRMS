@@ -17,6 +17,6 @@ import java.util.List;
 public class PostDaoImpl extends BaseDaoImpl<CrmPost> implements PostDao {
     @Override
     public List<CrmPost> findAll(CrmDepartment crmDepartment) {
-        return (List<CrmPost>) this.getHibernateTemplate().find("from CrmPost where crmDepartment=?", crmDepartment);
+        return (List<CrmPost>) getHibernateTemplate().find("from CrmPost where crmDepartment=?", crmDepartment);
     }
 }

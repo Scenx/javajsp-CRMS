@@ -1,6 +1,5 @@
 package com.scen.crm.base;
 
-import com.scen.crm.coursetype.domain.CrmCourseType;
 import org.hibernate.criterion.DetachedCriteria;
 
 import java.io.Serializable;

@@ -19,41 +19,41 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
     private Class<?> beanClass;
 
     public BaseDaoImpl() {
-        ParameterizedType parameterizedType = (ParameterizedType) this.getClass().getGenericSuperclass();
+        ParameterizedType parameterizedType = (ParameterizedType) getClass().getGenericSuperclass();
         beanClass = (Class<?>) parameterizedType.getActualTypeArguments()[0];
     }
 
     @Override
     public void save(T t) {
-        this.getHibernateTemplate().save(t);
+        getHibernateTemplate().save(t);
     }
 
     @Override
     public void update(T t) {
-        this.getHibernateTemplate().update(t);
+        getHibernateTemplate().update(t);
 
     }
 
     @Override
     public void delete(T t) {
-        this.getHibernateTemplate().delete(t);
+        getHibernateTemplate().delete(t);
 
     }
 
     @Override
     public void saveOrUpdate(T t) {
-        this.getHibernateTemplate().saveOrUpdate(t);
+        getHibernateTemplate().saveOrUpdate(t);
 
     }
 
     @Override
     public T findById(Serializable id) {
-        return (T) this.getHibernateTemplate().get(beanClass, id);
+        return (T) getHibernateTemplate().get(beanClass, id);
     }
 
     @Override
     public List<T> findAll() {
-        return (List<T>) this.getHibernateTemplate().find("from " + beanClass.getName());
+        return (List<T>) getHibernateTemplate().find("from " + beanClass.getName());
     }
 
 
@@ -61,23 +61,23 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
     @Override
     public int getTotalRecord(String condition, Object[] params) {
         String hql = "select count(c) from "+beanClass.getName()+" c where 1=1" + condition;
-        List<Long> list = (List<Long>) this.getHibernateTemplate().find(hql, params);
+        List<Long> list = (List<Long>) getHibernateTemplate().find(hql, params);
         return list.get(0).intValue();
     }
 
     @Override
     public List<T> findAll(String condition, Object[] params, int startIndex, int pageSize) {
         String hql = "from "+beanClass.getName()+" where 1=1 " + condition;
-        return this.getHibernateTemplate().execute(new PageHibernateCallback<T>(hql, params, startIndex, pageSize));
+        return getHibernateTemplate().execute(new PageHibernateCallback<T>(hql, params, startIndex, pageSize));
     }
 
     @Override
     public List<T> findAll(DetachedCriteria criteria) {
-        return (List<T>) this.getHibernateTemplate().findByCriteria(criteria);
+        return (List<T>) getHibernateTemplate().findByCriteria(criteria);
     }
 
     @Override
     public List<T> findAll(DetachedCriteria criteria, int startIndex, int pageSize) {
-        return (List<T>) this.getHibernateTemplate().findByCriteria(criteria,startIndex,pageSize);
+        return (List<T>) getHibernateTemplate().findByCriteria(criteria,startIndex,pageSize);
     }
 }

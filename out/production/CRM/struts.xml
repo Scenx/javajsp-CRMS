@@ -20,7 +20,10 @@
             <interceptor name="loginInterceptor" class="com.scen.crm.web.interceptor.LoginInterceptor"/>
             <!--自定义拦截器栈-->
             <interceptor-stack name="loginStack">
-                <interceptor-ref name="defaultStack"/>
+
+                <interceptor-ref name="defaultStack">
+                    <param name="fileUpload.allowedExtensions">.xls,.xlsx</param>
+                </interceptor-ref>
                 <!--自定义拦截器需要对login方法不进行拦截-->
                 <interceptor-ref name="loginInterceptor">
                     <param name="excludeMethods">login</param>
@@ -50,4 +53,6 @@
     <include file="struts2/struts-post.xml"/>
     <!--课程类别表现层-->
     <include file="struts2/struts-courseType.xml"/>
+    <!--班级表现层-->
+    <include file="struts2/struts-classes.xml"/>
 </struts>

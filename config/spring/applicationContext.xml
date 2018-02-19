@@ -65,4 +65,6 @@
     <import resource="applicationContext-post.xml"/>
     <!--课程类别-->
     <import resource="applicationContext-courseType.xml"/>
+    <!--班级-->
+    <import resource="applicationContext-classes.xml"/>
 </beans>

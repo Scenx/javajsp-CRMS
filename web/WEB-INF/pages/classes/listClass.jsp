@@ -1,3 +1,4 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -23,7 +24,7 @@
             <td width="42%" align="center">&nbsp;</td>
             <td width="36%" align="right">
                 <%--添加班级  /html/classesm/addClass.jsp--%>
-                <a href="${pageContext.request.contextPath}/pages/classesm/addOrEditClass.jsp">
+                <a href="${pageContext.request.contextPath}/WEB-INF/classesm/addOrEditClass.jsp">
                     <img src="${pageContext.request.contextPath}/images/button/tianjia.gif" class="img"/>
                 </a>
                 <%--高级查询
@@ -63,51 +64,34 @@
     </tr>
     </thead>
     <tbody>
-    <tr class="tabtd2">
-        <td align="center">1期</td>
-        <td align="center">java基础</td>
-        <td align="center">2015-03-10</td>
-        <td align="center">2015-04-30</td>
-        <td align="center">已结束</td>
-        <td align="center">1</td>
-        <td align="center">2</td>
-        <td align="center">0</td>
+    <s:iterator value="crmClasses" status="vs">
+    <tr class="${vs.even ? 'tabtd2':'tabtd1'}">
+        <td align="center">${name}</td>
+        <td align="center">${crmCourseType.courseName}</td>
+        <td align="center"><s:date name="beginTime" format="yyyy-MM-dd"/></td>
+        <td align="center"><s:date name="endTime" format="yyyy-MM-dd"/></td>
+        <td align="center">${status}</td>
+        <td align="center">${totalCount}</td>
+        <td align="center">${upgradeCount}</td>
+        <td align="center">${changeCount}</td>
         <td align="center">
-            <a href="${pageContext.request.contextPath}/pages/classesm/addOrEditClass.jsp"><img
+            <a href="${pageContext.request.contextPath}/WEB-INF/classesm/addOrEditClass.jsp"><img
                     src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/></a>
         </td>
         <td align="center">
-            <a href="${pageContext.request.contextPath}/pages/classesm/showClass.jsp"><img
+            <a href="${pageContext.request.contextPath}/WEB-INF/classesm/showClass.jsp"><img
                     src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/></a>
         </td>
         <td align="center" title="上次上传时间：2015-04-02">
-            <a href="${pageContext.request.contextPath}/pages/classesm/uploadClass.jsp">上传</a>
+
+            <s:a namespace="/" action="classesAction_uploadUI">
+                <s:param name="classId" value="classId"/>
+                上传
+            </s:a>
             <a href="${pageContext.request.contextPath}/pages/classesm/downloadClass">下载</a> <br/>
         </td>
     </tr>
-    <tr class="tabtd1">
-        <td align="center">2期</td>
-        <td align="center">java基础</td>
-        <td align="center">2015-04-28</td>
-        <td align="center">2015-05-27</td>
-        <td align="center">已开班</td>
-        <td align="center">0</td>
-        <td align="center">0</td>
-        <td align="center">0</td>
-        <td align="center">
-            <a href="${pageContext.request.contextPath}/classesm/classAction_preAddOrEdit.action?classId=2c9091c14c78e58b014c78e9106e000b"><img
-                    src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/></a>
-        </td>
-        <td align="center">
-            <a href="${pageContext.request.contextPath}/classesm/classAction_findById.action?classId=2c9091c14c78e58b014c78e9106e000b"><img
-                    src="${pageContext.request.contextPath}/images/button/modify.gif" class="img"/></a>
-        </td>
-        <td align="center" title="上次上传时间：">
-            <a href="${pageContext.request.contextPath}/classesm/classAction_preUpload.action?classId=2c9091c14c78e58b014c78e9106e000b">上传</a>
-            暂无
-        </td>
-    </tr>
-
+    </s:iterator>
     </tbody>
 </table>
 

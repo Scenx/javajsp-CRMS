@@ -3,6 +3,7 @@ package com.scen.crm.utils;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.UUID;
 
 /**
  * 字符串工具类
@@ -28,5 +29,14 @@ public class MyStringUtils {
             //如果出现异常 返回默认值
             return value;
         }
+    }
+
+    /**
+     * 获得一个32长度的UUID
+     *
+     * @return
+     */
+    public static String getUUID() {
+        return UUID.randomUUID().toString().replace("-", "");
     }
 }
